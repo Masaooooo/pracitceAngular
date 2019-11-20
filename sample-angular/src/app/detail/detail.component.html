@@ -1,0 +1,32 @@
+<div class="detail">
+  <div class="detailImage">
+    <img [src]="'..' + detailData.image" alt="">
+  </div>
+  <div class="detailUnder">
+    <div class="detailHeader">
+      <a routerLink="/list" class="detailBackButtoon"><i class="fas fa-chevron-left detailBackArrow"></i>戻る</a>
+    </div>
+    <div class="detailContent">
+      <div class="detailLeft">
+        <h1 class="detailTitle">{{detailData.name}}</h1>
+        <p class="detailCopy">{{detailData.product_copy}}</p>
+        <ul class="tagList">
+          <li class="tagItem" *ngFor="let tagItem of (detailData.tag)">
+            <app-tag [text]="tagItem"></app-tag>
+          </li>
+        </ul>
+        <p class="detailDescription">{{detailData.description}}</p>
+      </div>
+      <div class="detailRight">
+        <h2 class="detailSubTitle">値段</h2>
+        <p class="detailPrice">{{detailData.price | currency : 'JPY': true}}<span class="detailPrice-tax">(税込)</span></p>
+        <div class="detailButton">
+          <app-button text="この商品を買う" path="＃"></app-button>
+        </div>
+        <h2 class="detailSubTitle">ショップ情報</h2>
+        <p class="detailAddress">〒{{detailData.zip_code}}</p>
+        <p class="detailAddress">{{detailData.shop_address}}</p>
+      </div>
+    </div>
+  </div>
+</div>

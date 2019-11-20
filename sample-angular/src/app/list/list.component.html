@@ -1,0 +1,12 @@
+<app-header></app-header>
+<ul class="productList">
+  <li [routerLink]="'/detail/'+ produtItem.id" class="productItem" *ngFor="let produtItem of productData">
+    <img class="productThumb" [src]="'..' + produtItem.image" alt="">
+    <p class="productTitle">{{ produtItem.name }}</p>
+    <ul class="tagList">
+      <li class="tagItem" *ngFor="let tagItem of (produtItem.tag)">
+        <app-tag [text]="tagItem"></app-tag>
+      </li>
+    </ul>
+  </li>
+</ul>

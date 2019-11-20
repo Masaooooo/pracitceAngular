@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["detail"],{c84b:function(e,t,a){"use strict";a.r(t);var l=function(){var e=this,t=e.$createElement,a=e._self._c||t;return a("div",{staticClass:"detail"},[e._v(" Detail ")])},n=[],i={name:"Detail"},s=i,c=a("2877"),u=Object(c["a"])(s,l,n,!1,null,null,null);t["default"]=u.exports}}]);
+//# sourceMappingURL=detail.e6673b0b.js.map

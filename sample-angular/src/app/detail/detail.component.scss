@@ -1,0 +1,70 @@
+.detailImage{
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 476px;
+  }
+}
+.detailUnder{
+  width: 1370px;
+  margin: 30px auto 0;
+  padding-bottom: 100px;
+}
+.detailBackButtoon{
+  color: #000;
+}
+.detailBackArrow{
+  padding-right: 5px;
+}
+.detailContent{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.detailLeft{
+  width: 812px;
+}
+.detailTitle{
+  font-size: 32px;
+}
+.detailCopy{
+  margin-top: 26px;
+  font-weight: 700;
+}
+.tagList{
+  margin-top: 20px;
+  display: flex;
+}
+.tagItem{
+  &:not(:first-child){
+    margin-left: 5px;
+  }
+}
+.detailDescription{
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 2.5;
+}
+.detailRight{
+  width: 400px;
+}
+.detailButton{
+  margin: 38px 0;
+}
+.detailSubTitle{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.detailPrice{
+  font-size: 32px;
+  font-weight: 700;
+  &-tax{
+    font-size: 16px;
+  }
+}
+.detailAddress{
+  font-size: 16px;
+  line-height: 1.8;
+}
